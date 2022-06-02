@@ -17,7 +17,7 @@ class MovieSeeder extends Seeder
     {
        Movie::create(['id' => 1, "category" => 'popular', "title" => "Stranger Things","rating"=>"95",
               "description"=>"The first season of the American science fiction horror drama television series Stranger Things premiered worldwide exclusively via Netflix's streaming service.",
-              "image" => "https://res.cloudinary.com/guevara/image/upload/v1654086873/my%20pic/game-3820_feh2yc.jpg",
+              "image" => "https://res.cloudinary.com/guevara/image/upload/v1654083660/my%20pic/stranger_lmijzp.jpg",
               "year" =>"2016","tag"=>"Winona Ryder harbour, Mathew Modine TV Shows, Tv Sci-fi , Teen TV Shows" 
     ]);
     Movie::create(['id' => 2, "category" => 'popular', "title" => "Okja","rating"=>"87",

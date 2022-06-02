@@ -8,6 +8,10 @@ body{
 h3,h1{
     font-family: 'Bebas Neue';
 }
+#rating{
+    color: #58fc85;
+font-weight: bold;
+}
 .slide_container{
    padding: 10px 50px; 
 }
@@ -27,9 +31,10 @@ margin-left: 7em;
     width: 60%;
 }
 .right_container img{
-    width: 100%;
+    width: 90%;
     height: 300px;
     object-fit: cover;
+    margin: 0px 10px;
 }
 
 .slider_title{
@@ -39,8 +44,31 @@ margin-left: 7em;
 }
 .slider_content :hover{
     border: 3px solid #fff;
+    cursor: pointer;
 }
 .slider_content img{
     width: 95%;
     height: 200px;
+}
+@media only screen and (max-width: 600px) {
+    .header_container{
+        flex-direction: column-reverse;
+    }
+    .left_container{
+        width: 100%;
+        margin: 10px;
+    }
+    .left_container p{
+        text-align: left;
+    }
+    .right_container{
+        width: 100%;
+    }
+    .right_container img{ 
+        width: 100%;
+        margin: 0;
+    }
+    .slider_content img{
+        width: 100%; 
+    }
 }
