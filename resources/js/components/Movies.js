@@ -5,7 +5,6 @@ import Slider from 'react-slick';
 
 
 function Movies() {
-    const [sliderRef, setSliderRef] = useState(null);
     const sliderSettings = {
     infinite: true,
       slidesToShow: 3,
@@ -53,12 +52,6 @@ const populars=[
         "Poster": "https://res.cloudinary.com/guevara/image/upload/v1654094076/my%20pic/TTV-SELECTS-NETFLIX-THE-CROWN-SEASON-2-570x321_e6ub85.jpg"
       }
   ]
-
-const fetchProducts = async () => {
-    await axios.get(`https://my-json-server.typicode.com/horizon-code-academy/fake-movies-api/movies`).then(({data})=>{
-        setMovies(data)
-    })
-}
     return (
     <div className='movie_container'>
 <div className='header_container'>
