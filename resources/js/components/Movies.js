@@ -48,7 +48,7 @@ function Movies() {
   },[])
 
   const fetchMovies = async () => {
-      await axios.get(`http://127.0.0.1:8000/api/movies`).then(({data})=>{
+      await axios.get(`https://ne-flix.herokuapp.com/api/movies`).then(({data})=>{
         setMovies(data)
       })
   }
