@@ -11,15 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,200&display=swap" rel="stylesheet">
+    <base href="https://ne-flix.herokuapp.com"/>
     <title></title>
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
-    <script src="https://ne-flix.herokuapp.com/js/app.js" defer></script>
+    
 </head>
 <body>
     <div id="movies"></div>
 
-    <script src="{{ asset('js/manifest.js') }}"></script>
-    <script src="{{ asset('js/vendor.js') }}"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    {{-- <script src="{{ asset('js/manifest.js') }}"></script>
+    <script src="{{ asset('js/vendor.js') }}"></script> --}}
+    <script src="https://ne-flix.herokuapp.com/js/app.js" defer></script>
+    <script src="https://ne-flix.herokuapp.com/js/vendor.js" defer></script>
+    <script src="https://ne-flix.herokuapp.com/js/manifest.js" defer></script>
+    
 </body>
 </html>
