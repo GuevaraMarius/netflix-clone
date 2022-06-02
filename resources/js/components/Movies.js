@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 
 
 function Movies() {
-  const [movie,setMovie]=useState("");
+  const [poster,setPoster]=useState({});
     const sliderSettings = {
     infinite: true,
       slidesToShow: 3,
@@ -46,7 +46,11 @@ function Movies() {
   useEffect(()=>{
       fetchMovies() 
   },[])
-
+  useEffect(()=>{
+    if(movies[0]){
+setPoster(movies[0]);
+    }
+},[movies])
   const fetchMovies = async () => {
       await axios.get(`https://ne-flix.herokuapp.com/api/movies`).then(({data})=>{
         setMovies(data)
@@ -56,29 +60,27 @@ function Movies() {
     <div className='movie_container'>
 
   {
-  movies.length > 0 && (
-    movies.map((row, key)=>(
-      <div className='header_container' key={key}>
+  poster && (
+      <div className='header_container' >
       <div className='left_container'>
           <div className='title'>
               <h3>Netflix  Original</h3>
-              <h1>{row.title}</h1>
+              <h1>{poster.title}</h1>
               </div>
           <div className='details'>
-              <span id='rating'> {row.rating}% Match </span> <span>{row.year}</span>
+              <span id='rating'> {poster.rating}% Match </span> <span>{poster.year}</span>
           </div>
           <div className='description'>
-            <p>{row.description}</p>
+            <p>{poster.description}</p>
           </div>
           <div className='footer'>
-              <p>{row.tag}</p>
+              <p>{poster.tag}</p>
           </div>
       </div>
       <div className='right_container'>
-      <img src={row.image} />
+      <img src={poster.image} />
       </div>
   </div>
-  ))[0]
   )
   }      
 
@@ -88,7 +90,7 @@ function Movies() {
 {
 movies.length > 0 && (
   movies.map((row, key)=>(
-    <div className='slider_content' key={key}>
+    <div onClick={()=>setPoster(row)} className='slider_content' key={key}>
     <img src={row.image} />
 </div>
 ))

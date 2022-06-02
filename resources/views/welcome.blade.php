@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,200&display=swap" rel="stylesheet">
     <title></title>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+    <script src="https://ne-flix.herokuapp.com/js/app.js" defer></script>
 </head>
 <body>
     <div id="movies"></div>
