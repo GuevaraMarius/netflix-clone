@@ -21,6 +21,7 @@
 
     {{-- <script src="{{ asset('js/manifest.js') }}"></script>
     <script src="{{ asset('js/vendor.js') }}"></script> --}}
+
     <script src="https://ne-flix.herokuapp.com/js/app.js" defer></script>
     <script src="https://ne-flix.herokuapp.com/js/vendor.js" defer></script>
     <script src="https://ne-flix.herokuapp.com/js/manifest.js" defer></script>

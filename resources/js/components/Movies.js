@@ -8,7 +8,7 @@ function Movies() {
   const [poster,setPoster]=useState({});
     const sliderSettings = {
     infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 5,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
@@ -26,7 +26,7 @@ function Movies() {
       };
       const sliderSettings2 = {
         infinite: true,
-          slidesToShow: 3,
+          slidesToShow: 5,
           slidesToScroll: -1,
           autoplay: true,
           autoplaySpeed: 2000,
@@ -52,9 +52,9 @@ setPoster(movies[0]);
     }
 },[movies])
   const fetchMovies = async () => {
-      await axios.get(`https://ne-flix.herokuapp.com/api/movies`).then(({data})=>{
-        setMovies(data)
-      })
+    
+    const {data} =  await axios.get(`https://ne-flix.herokuapp.com/api/movies`)
+      setMovies(data);
   }
     return (
     <div className='movie_container'>

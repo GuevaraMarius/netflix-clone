@@ -5462,7 +5462,7 @@ function Movies() {
 
   var sliderSettings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -5478,7 +5478,7 @@ function Movies() {
   };
   var sliderSettings2 = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: -1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -5509,17 +5509,21 @@ function Movies() {
 
   var fetchMovies = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var _yield$axios$get, data;
+
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return axios__WEBPACK_IMPORTED_MODULE_2___default().get("https://ne-flix.herokuapp.com/api/movies").then(function (_ref2) {
-                var data = _ref2.data;
-                setMovies(data);
-              });
+              return axios__WEBPACK_IMPORTED_MODULE_2___default().get("https://ne-flix.herokuapp.com/api/movies");
 
             case 2:
+              _yield$axios$get = _context.sent;
+              data = _yield$axios$get.data;
+              setMovies(data);
+
+            case 5:
             case "end":
               return _context.stop();
           }

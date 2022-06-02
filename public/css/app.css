@@ -29,6 +29,7 @@ margin-left: 7em;
 }
 .right_container {
     width: 60%;
+    
 }
 .right_container img{
     width: 90%;
@@ -36,6 +37,8 @@ margin-left: 7em;
     -o-object-fit: cover;
        object-fit: cover;
     margin: 0px 10px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
 .slider_title{

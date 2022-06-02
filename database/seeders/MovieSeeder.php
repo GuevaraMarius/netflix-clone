@@ -35,5 +35,15 @@ Movie::create(['id' => 4, "category" => 'popular', "title" => "The Crown","ratin
 "image" => "https://res.cloudinary.com/guevara/image/upload/v1654094113/my%20pic/House_of_Cards_main_characters_wbaro5.jpg",
 "year" =>"2020","tag"=>" MRC; Trigger Street Productions; Wade/Thomas" 
 ]);
+Movie::create(['id' => 5, "category" => 'popular', "title" => "Okja","rating"=>"87",
+"description"=>"For 10 idyllic years, young Mija has been caretaker and constant companion to Okja - a massive animal and an even bigger friend - at her home in the mountains of South Korea",
+"image" => "https://res.cloudinary.com/guevara/image/upload/v1654092439/my%20pic/maxresdefault_yaiez1.jpg",
+"year" =>"2017","tag"=>"Bong Joon-ho, Ted Sarandos, Dooho Choi, Jeremy Kleiner, Dede Gardner, Woo-sik Seo, Lewis Taewan Kim" 
+]);
+Movie::create(['id' => 6, "category" => 'popular', "title" => "The Crown","rating"=>"89",
+"description"=>"Frank Underwood is a Democrat appointed as the secretary of state. Along with his wife, he sets out on a quest to seek revenge on the people who betrayed him while successfully rising to supremacy.",
+"image" => "https://res.cloudinary.com/guevara/image/upload/v1654094113/my%20pic/House_of_Cards_main_characters_wbaro5.jpg",
+"year" =>"2020","tag"=>" MRC; Trigger Street Productions; Wade/Thomas" 
+]);
     }
 }
